@@ -1,3 +1,101 @@
-.container{
-  background-color:#0d6efd;
+@import "mixins";
+@import "var";
+main {
+  background-color:#f2f2f2;
+  width: 80%;
 }
+h2{
+  font-size: 1.3rem;
+}
+h4{
+  font-size: 1rem;
+}
+.border {
+  margin-bottom: 50px;
+}
+.col-3 {
+  margin: 10px;
+  background-color: #ffffff;
+  width: 22%;
+}
+
+.container{
+  margin-bottom: 40px;
+}
+.progress {
+  border: 0 solid;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+#total-visits-bar{
+  @include progress-bar-width(45%);
+  background-color: $color-pink;
+}
+#bounce-rate-bar {
+  @include progress-bar-width(55%);
+  background-color: $color-green;
+}
+#new-comments-bar {
+  @include progress-bar-width(35%);
+  background-color: $color-orange;
+}
+#new-posts-bar{
+  @include progress-bar-width(80%);
+  background-color: $color-blue;
+}
+i {
+  font-size: 25px;
+  padding: 10px;
+}
+i, h4{
+  margin-top: 20px;
+}
+p {
+    font-size: 15px;
+}
+.green-arrow, .number-green, .green-user{
+  color:$color-green;
+}
+.pink-location, .number-pink, .pink-suitcase{
+  color:$color-pink;
+}
+.orange-comment, .orange-columns, .number-orange{
+  color:$color-orange;
+}
+.blue-pencil, .blue-question, .number-blue{
+  color:$color-blue;
+}
+.text-black{
+  color: black;
+}
+.bounce-background{
+  background-color: $color-green;
+}
+.total-background{
+  background-color: $color-pink;
+}
+.comment-background{
+  background-color: $color-orange;
+}
+.posts-background{
+  background-color: $color-blue;
+}
+.last-section .col, .text-white{
+  color: whitesmoke;
+}
+.align-left{
+  text-align: left;
+}
+.align-right{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
